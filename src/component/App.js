@@ -1,7 +1,13 @@
 import React from "react";
 
+import SongList from "./SongList";
+
 const App = () => {
-  return <p>See you Space Cowboy!!!!</p>
+  return (
+    <div>
+      <SongList />
+    </div>
+  );
 };
 
 export default App;
