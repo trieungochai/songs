@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+
 import { selectSong } from "../actions";
 class SongList extends Component {
   renderList() {
@@ -21,13 +22,13 @@ class SongList extends Component {
   }
 
   render() {
-    console.log(this.props);
+    // console.log(this.props);
     return <div className="ui divided list">{this.renderList()}</div>;
   }
 }
 
 const mapStateToProps = (state) => {
-  console.log({ state });
+  // console.log({ state });
   return { songs: state.songs };
 };
 
